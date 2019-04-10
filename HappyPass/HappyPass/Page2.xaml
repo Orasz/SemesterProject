@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HappyPass.Page2" Title="Card" Icon="credit_card.png">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center">
+                <Label Text="Your Be Happy Pass Card" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" HeightRequest="80" WidthRequest="300"  TextColor="Blue" BackgroundColor="White"/>
+                <Image Source="credit_card.png" BackgroundColor="Black" />
+            <Button Text="Often asked           >" HorizontalOptions="FillAndExpand" BackgroundColor="Blue" TextColor="White" BorderRadius="12" WidthRequest="300"/>
+            <Button Text="Used Offers               >" BackgroundColor="Blue" TextColor="White" BorderRadius="12" />
+            <Button Text="Your Tickets              >" BackgroundColor="Blue" TextColor="White" BorderRadius="12" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

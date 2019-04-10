@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HappyPass.RegisterPage">
+    <Grid RowSpacing="0" BackgroundColor="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--HEEADER SECTION-->
+        <StackLayout Grid.Row="0">
+            <Label Text="Welvome to 
+                   BE HAPPY PASS" XAlign="Center" FontSize="Large" Margin="0,20,0,0" />
+            <BoxView BackgroundColor="White" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+
+
+        <!--LOGIN TEXT SECTION-->
+        <Grid Grid.Row="1">
+            
+            <Label Text="If you wish to receive customised offers
+                   you can fill out the information below.
+                   This way you only receive information
+                   that is relevat to you and your family.
+                   Otherwise you can continue
+                   and use the app as is" XAlign="Center"/>
+            <Label Text="Back" Margin="0,20,0,0" XAlign="Center" />
+            <Button Text="Continue without adding info"  Clicked="ContinueBtn_Clicked"/>
+        </Grid>
+
+        <StackLayout Grid.Row="2">
+            <Label Text="Back" Margin="0,20,0,0" XAlign="Center" />
+            <Label Text="Name"/>
+            <Entry x:Name="NameEntry" Placeholder="Name"/>
+            <Label Text="Age"/>
+            <Entry x:Name="AgeEntry" Placeholder="Age"/>
+            <Label Text="Email"/>
+            <Entry x:Name="EmailEntry" Placeholder="EmailID"/>
+            <Label Text="Adress"/>
+            <Entry x:Name="AdressEntry" Placeholder="Adress"/>
+            <Label Text="Gender"/>
+            <Entry x:Name="GenderEntry" Placeholder="Gender"/>
+            <Label Text="Number of Children"/>
+            <Entry x:Name="NumChildEntry" Placeholder="NumChild"/>
+            <Label Text="Age range of children"/>
+            <Entry x:Name="ChildAgeRangeEntry" Placeholder="ChildAgeRange"/>
+            <Label Text="Are you mom, dad, grandparent etc"/>
+            <Entry x:Name="ParentStatusEntry" Placeholder="ParentStatus"/>
+            <Label Text="Attatch credit card information"/>
+            <Entry x:Name="CreditcardEntry" Placeholder="Creditcard"/>
+            <Label Text="Social Medias"/>
+            <Entry x:Name="SoMeEntry" Placeholder="SoMe"/>
+            <Label Text="Username"/>
+            <Entry x:Name="UsernameEntry" Placeholder="Username"/>
+            <Label Text="Password"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Password"/>
+            <Button x:Name="ContinueBtn" Clicked="ContinueBtn_Clicked" Text="Continue"/>
+        </StackLayout>
+
+        
+    </Grid>
+
+</ContentPage>

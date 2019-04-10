@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HappyPass"
+             x:Class="HappyPass.Help1Page">
+
+    <Grid RowSpacing="0" BackgroundColor="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--HEEADER SECTION-->
+        <StackLayout Grid.Row="0">
+            <Label Text="BE HAPPY PASS" XAlign="Center" FontSize="Large" Margin="0,20,0,0" />
+            <BoxView BackgroundColor="White" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+
+
+        <!--LOGIN TEXT SECTION-->
+        <Label Text="Login with QR Scan" Grid.Row="1" XAlign="Center"/>
+
+
+        <!--TEXT SECTION SECTION-->
+        <Grid Grid.Row="2">
+            <Image Source="qrcode.png" WidthRequest="75" HeightRequest="75"/>
+            <Label Text="In this app you will find a range
+                   of offers that will let you experience more 
+                   for less within the resort." XAlign="Center"/>
+        </Grid>
+
+        <!--BOTTON SECTION-->
+        <StackLayout Grid.Row="3">
+            <Label Text="Back" Margin="0,20,0,0" XAlign="Center" />
+            <Button Text="SIGN IN"/>
+        </StackLayout>
+
+        <!--BUTTOM/LEGOLANDIMAGE SECTION-->
+        <Image Source="legoland.jpg" Aspect="AspectFill" Grid.Row="4"/>
+
+
+
+    </Grid>
+
+</ContentPage>

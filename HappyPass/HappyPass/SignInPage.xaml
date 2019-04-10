@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HappyPass.SignInPage">
+    <Grid RowSpacing="0" BackgroundColor="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--HEEADER SECTION-->
+        <StackLayout Grid.Row="0">
+            <Label Text="BE HAPPY PASS" XAlign="Center" FontSize="Large" Margin="0,20,0,0" />
+            <BoxView BackgroundColor="White" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+
+
+        <!--LOGIN TEXT SECTION-->
+        <Grid Grid.Row="1">
+            <Image Source="qrcode.png" WidthRequest="75" HeightRequest="75"/>
+            <Label Text="Login with your Be Happy Pass info" XAlign="Center"/>
+            
+        </Grid>
+
+        <StackLayout Grid.Row="2">
+            <Label Text="Back" Margin="0,20,0,0" XAlign="Center" />
+            <Label Text="Unique number"/>
+            <Entry x:Name="UniNumEntry" Placeholder="UniNum"/>
+            <Label Text="Password"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Password"/>
+            <Button 
+                x:Name="SignInBtn"
+                Clicked="SignInBtn_Clicked"
+                Text="SIGN IN"/>
+        </StackLayout>
+
+        <!--BUTTOM/LEGOLANDIMAGE SECTION-->
+        <Image Source="legoland.jpg" Aspect="AspectFill" Grid.Row="4"/>
+
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HappyPass.Faqpage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="What happens if I lose my Be Happy Pass card?" TextColor="Blue" />
+            <Label Text="Can I request earlty check-in and late check-out? " TextColor="Blue" />
+            <Label Text="How do I book a Hotel?"/>
+            <Label Text="How many days are my theme park tickets valid for in my hotel package?" TextColor="Blue"/>
+            <Label Text="• Is breakfast included in my hotel booking?" TextColor="Blue"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
