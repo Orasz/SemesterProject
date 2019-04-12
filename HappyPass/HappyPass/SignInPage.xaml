@@ -35,8 +35,8 @@
                 Text="SIGN IN"/>
         </StackLayout>
 
-        <!--BUTTOM/LEGOLANDIMAGE SECTION-->
-        <Image Source="legoland.jpg" Aspect="AspectFill" Grid.Row="4"/>
+        <!--BUTTOM/LEGOLANDIMAGE SECTION>
+        <Image Source="legoland.jpg" Aspect="AspectFill" Grid.Row="4"/-->
 
     </Grid>
 

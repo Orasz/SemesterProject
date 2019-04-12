@@ -35,7 +35,7 @@
         <!--BOTTON SECTION-->
         <StackLayout Grid.Row="3">
             <Label Text="Back" Margin="0,20,0,0" XAlign="Center" />
-            <Button Text="SIGN IN"/>
+            
         </StackLayout>
 
         <!--BUTTOM/LEGOLANDIMAGE SECTION-->
