@@ -4,9 +4,7 @@
              x:Class="HappyPass.MapPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image Source="map.png" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -68,6 +68,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\LithosPro-Regular.otf" />
+    <AndroidAsset Include="Assets\HelveticaNeue.ttf" />
+    <AndroidAsset Include="Assets\HelveticaNeueBd.ttf" />
+    <AndroidAsset Include="Assets\HelveticaNeueIt.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -91,7 +95,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable-hdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
@@ -133,31 +136,55 @@
     <AndroidResource Include="Resources\drawable\qrcode.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\cardicon.png" />
+    <AndroidAsset Include="Resources\drawable\cardicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\filtericon.png" />
+    <AndroidAsset Include="Resources\drawable\filtericon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\navigationicon2.png" />
+    <AndroidAsset Include="Resources\drawable\legoland.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\navigationicon.png" />
+    <AndroidAsset Include="Resources\drawable\map.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\profileicon.png" />
+    <AndroidAsset Include="Resources\drawable\navigationicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\staricon.png" />
+    <AndroidAsset Include="Resources\drawable\navigationicon2.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\qrcode.png" />
+    <AndroidAsset Include="Resources\drawable\profileicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\legoland.jpg" />
+    <AndroidAsset Include="Resources\drawable\staricon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\map.png" />
+    <AndroidAsset Include="Resources\drawable-hdpi\cardicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable-hdpi\filtericon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable-hdpi\legoland.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable-hdpi\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable-hdpi\navigationicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable-hdpi\navigationicon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable-hdpi\profileicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable-hdpi\qrcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable-hdpi\staricon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
