@@ -4,7 +4,13 @@
              x:Class="HappyPass.Page2" Title="Card" Icon="credit_card.png">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center">
-                <Label Text="Your Be Happy Pass Card" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" HeightRequest="80" WidthRequest="300"  TextColor="Blue" BackgroundColor="White"/>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+
+                <Image Source="filterbtnsmll.png" HeightRequest="45" WidthRequest="45" Aspect="AspectFill"/>
+
+            </StackLayout>
+            
+            <Label Text="Your Be Happy Pass Card" VerticalTextAlignment="Center" Margin="50 0 0 0" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" HeightRequest="80" WidthRequest="300"  TextColor="Blue" BackgroundColor="White"/>
                 <Image Source="credit_card.png" BackgroundColor="Black" />
             <Button Text="Often asked           >" HorizontalOptions="FillAndExpand" BackgroundColor="Blue" TextColor="White" BorderRadius="12" WidthRequest="300"/>
             <Button Text="Used Offers               >" BackgroundColor="Blue" TextColor="White" BorderRadius="12" />

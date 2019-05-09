@@ -186,5 +186,8 @@
   <ItemGroup>
     <AndroidAsset Include="Resources\drawable-hdpi\staricon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\filterbtnsmll.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
