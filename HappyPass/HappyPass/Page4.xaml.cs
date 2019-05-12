@@ -15,6 +15,7 @@ namespace HappyPass
 		public Page4 ()
 		{
 			InitializeComponent ();
+          //Emailframe.Content = new Entry { Text = "Email :         " , TextColor=Color.Black};   
 		}
 	}
 }

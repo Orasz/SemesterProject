@@ -84,7 +84,7 @@
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="BackgroundColor" Value="{StaticResource LightBlue}" />
                 <Setter Property="HeightRequest" Value="46" />
-                <Setter Property="BorderRadius" Value="25" />
+                <!--Setter Property="BorderRadius" Value="25" /-->
             </Style>
             <Style x:Key="ProfileButton" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource MainBlue}"/>
@@ -93,7 +93,7 @@
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="BackgroundColor" Value="{StaticResource LightBlue}" />
                 <Setter Property="HeightRequest" Value="46" />
-                <Setter Property="BorderRadius" Value="25" />
+              <!-->Setter Property="BorderRadius" Value="25" /-->
             </Style>
             <Style x:Key="FilterText" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource PureWhite}"/>
@@ -132,7 +132,7 @@
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="BackgroundColor" Value="{StaticResource DarkBlue}" />
                 <Setter Property="HeightRequest" Value="46" />
-                <Setter Property="BorderRadius" Value="25" />
+                <!--Setter Property="BorderRadius" Value="25" /-->
             </Style>
             <Style x:Key="ProfileInformationText" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource MainBlue}"/>

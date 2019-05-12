@@ -10,7 +10,7 @@ namespace HappyPass
         public App()
         {
             InitializeComponent();
-
+            
             MainPage = new MainPage();
         }
 
