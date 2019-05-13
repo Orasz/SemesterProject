@@ -114,7 +114,10 @@
                              IsClippedToBounds="true"
                              BackgroundColor="{StaticResource DarkBlue}"
                              Margin="10,0,10,0" >
-                            <Editor Placeholder="Email: fried@gmail.com" />
+                            <!--Editor Placeholder="Email: fried@gmail.com" /-->
+                            <Entry
+                                x:Name="EmailEntry"
+                                Placeholder="Email:      fried@gmail.com"/>
                         </Frame>
                         <Frame x:Name="Addressframe"
                              Padding="10"
@@ -123,7 +126,9 @@
                              IsClippedToBounds="true"
                              BackgroundColor="{StaticResource DarkBlue}"
                              Margin="10,0,10,0" >
-                            <Editor Placeholder="Address: 43201 Victoria Street, London" />
+                            <Entry
+                                x:Name="AddressEntry"
+                                Placeholder="Address:       40217 Mulholland Drive, CA"/>
                         </Frame>
                         <Frame x:Name="Numberframe"
                                Grid.Row="2"
@@ -132,7 +137,9 @@
                                IsClippedToBounds="true"
                                BackgroundColor="{StaticResource DarkBlue}"
                                Margin="10,0,10,0" >
-                            <Editor Placeholder="Number: 123 456 789" />
+                            <Entry
+                                x:Name="NumberEntry"
+                                Placeholder="Number:        123 456 789"/>
                         </Frame>
                     </Grid>
                 </StackLayout>
