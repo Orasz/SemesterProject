@@ -32,12 +32,13 @@
             <StackLayout>
                 <Label Text="Already have a Be Happy Pass?" 
                 Style="{StaticResource LoginPText}" Margin="0, 20, 0, 10"/>
-                <Button Text="Sign in" Style="{StaticResource ProfileButton}">
+                <Button x:Name="SignInButton" Clicked="SignInBtn_Clicked" Text="Sign in" Style="{StaticResource ProfileButton}"/>
 
-                </Button>
+
 
             </StackLayout>
-            <Image x:Name="BottomImage" Source="legoland.jpg" Aspect="AspectFill" Margin="0, 10, 0, 0"/>
+
+            <Image Source="legoland.jpg" x:Name="BottomImage"  Aspect="AspectFill" Margin="0, 10, 0, 0"/>
 
 
         </StackLayout>

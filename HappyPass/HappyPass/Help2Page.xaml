@@ -17,11 +17,11 @@
                 <StackLayout>
                     <Label Text="Login with QR Scan" Style="{StaticResource LoginPText}"/>
 
-                    <Image Source="uniquenrIcon.png" WidthRequest="75" HeightRequest="75"/>
+                    <Image x:Name="NrImg" Source="uniquenrIcon.png" WidthRequest="75" HeightRequest="75"/>
 
                     <Label Text="When you have booked a stay at one of the &#10; hotels at Legoland Billund Resort you have &#10; receieved a unique code which you can use to &#10; login to the Be Happy Pass app. You can also &#10; scan the QR code." Style="{StaticResource LoginPText}"/>
 
-                    <Button Text="Back" Style="{StaticResource ProfileButton}" Margin="0, 20, 0, 0"></Button>
+                    <Button Clicked="BackBtnClicked" Text="Back" Style="{StaticResource ProfileButton}" Margin="0, 20, 0, 0"></Button>
 
 
                 </StackLayout>

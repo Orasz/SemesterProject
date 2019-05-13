@@ -15,6 +15,17 @@ namespace HappyPass
 		public Help1Page ()
 		{
 			InitializeComponent ();
-		}
-	}
+            QrImg.GestureRecognizers.Add(new TapGestureRecognizer((view) => OnImgClicked()));
+
+        }
+
+        private void BackBtnClicked(object sender, EventArgs e)
+        {
+            Navigation.PopModalAsync();
+        }
+        private void OnImgClicked()
+        {
+            Navigation.PushModalAsync(new InfoPage());
+        }
+    }
 }
