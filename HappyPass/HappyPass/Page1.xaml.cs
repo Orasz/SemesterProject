@@ -1,47 +1,47 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-
+using Plugin.Connectivity;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace HappyPass
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Page1 : ContentPage
-	{
-		public Page1 ()
-		{
-			InitializeComponent ();
-
-           // GetDatafromAPI();
-		}
-        
-        public class RootObject
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Page1 : ContentPage
+    {
+        private const string Url = "http://beirahost.com/new.json";
+        // This handles the Web data request
+        private HttpClient _client = new HttpClient();
+        public Page1()
         {
-            public string date { get; set; }
-            public string explanation { get; set; }
-            public string media_type { get; set; }
-            public string service_version { get; set; }
-            public string title { get; set; }
-            public string url { get; set; }
+            InitializeComponent();
+            OnGetList();
+
         }
 
-
-
-       /* private async void GetDatafromAPI()
+        protected async void OnGetList()
         {
-            HttpClient client = new HttpClient();
-
-            var response = await client.GetStringAsync("https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=uWIHKHVBfdX9jwm988Hb2ISkEAczjZt3dYQBOLNA");
-
-            var mynewobject = JsonConvert.DeserializeObject<List<RootObject>>(response);
-
-            ObjectView.ItemsSource = mynewobject;
-        }*/
+            if (CrossConnectivity.Current.IsConnected)
+            {
+                try
+                {
+                    var content = await _client.GetStringAsync(Url);
+                    var tr = JsonConvert.DeserializeObject<List<Offer>>(content);
+                    ObservableCollection<Offer> offers = new ObservableCollection<Offer>(tr);
+                    myList.ItemsSource = offers;
+                }
+                catch(Exception e)
+                {
+                    Debug.WriteLine(e);
+                }
+            }
+        }
     }
 }

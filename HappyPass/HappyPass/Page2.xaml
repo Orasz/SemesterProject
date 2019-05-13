@@ -3,18 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HappyPass.Page2" Title="Card" Icon="credit_card.png">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center">
-            <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
-
-                <Image Source="filterbtnsmll.png" HeightRequest="45" WidthRequest="45" Aspect="AspectFill"/>
-
+        <ScrollView>
+            <StackLayout>
+                <StackLayout>
+                    <!-- Place new controls here -->
+                    <Frame HasShadow="True">
+                        <Label Text="Your Be Happy Pass Card"
+                Style="{StaticResource ProfilePText}"/>
+                    </Frame>
+                    <StackLayout>
+                        <Image Source="legohappypass.png" Aspect="AspectFit"/>
+                    </StackLayout>
+                    <StackLayout Padding="50" >
+                        <Button Text="Often Asked                                         >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
+                        <Button Text="Used Offers                                         >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
+                        <Button Text="Your Tickets                                        >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Margin="20,35,20,20">
+                    <Entry x:Name="nameEntry"
+               Placeholder="Enter name" />
+                    <Entry x:Name="ageEntry"
+               Placeholder="Enter age" />
+                </StackLayout>
             </StackLayout>
-            
-            <Label Text="Your Be Happy Pass Card" VerticalTextAlignment="Center" Margin="50, 0, 0, 0" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" HeightRequest="80" WidthRequest="300"  TextColor="Blue" BackgroundColor="White"/>
-                <Image Source="credit_card.png" BackgroundColor="Black" />
-            <Button Text="Often asked           >" HorizontalOptions="FillAndExpand" BackgroundColor="Blue" TextColor="White" BorderRadius="12" WidthRequest="300"/>
-            <Button Text="Used Offers               >" BackgroundColor="Blue" TextColor="White" BorderRadius="12" />
-            <Button Text="Your Tickets              >" BackgroundColor="Blue" TextColor="White" BorderRadius="12" />
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

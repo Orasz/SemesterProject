@@ -16,7 +16,7 @@
 
                 <StackLayout>
                     <Label Text="If you wish to receive customised offers &#10; you can fill out the information below. &#10; This way you only receive information &#10;that is relevat to you and your family. &#10; Otherwise you can continue &#10; and use the app as is." Style="{StaticResource LoginPText}"/>
-                    <Button Text="Continue without adding info"  Style="{StaticResource ProfileButton}"/>
+                    <Button Text="Continue without adding info"  Style="{StaticResource ProfileButton}" Clicked="ContinueBtn_Clicked"/>
                 </StackLayout>
 
                 <StackLayout>
@@ -32,7 +32,7 @@
                     <Entry x:Name="SoMeEntry" Placeholder="Connect to social media" Style="{StaticResource EntryLoginField}"/>
                     <Entry x:Name="UsernameEntry" Placeholder="Username" Style="{StaticResource EntryLoginField}"/>
                     <Entry x:Name="PasswordEntry" Placeholder="Password" Style="{StaticResource EntryLoginField}"/>
-                    <Button x:Name="ContinueBtn" Text="Continue" Style="{StaticResource EntryLoginField}"/>
+                    <Button x:Name="ContinueBtn" Clicked="ContinueBtn_Clicked" Text="Continue" Style="{StaticResource EntryLoginField}"/>
                 </StackLayout>
 
             </StackLayout>

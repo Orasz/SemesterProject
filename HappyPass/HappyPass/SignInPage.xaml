@@ -23,10 +23,7 @@
                     <Label Text="Back" Margin="0,20,0,0" XAlign="Center" />
                     <Entry x:Name="UniNumEntry" Placeholder="UniNum" Style="{StaticResource EntryLoginField}"/>
                     <Entry x:Name="PasswordEntry" Placeholder="Password"  Style="{StaticResource EntryLoginField}"/>
-                    <Button 
-                x:Name="SignInBtn"
-    
-                Text="SIGN IN" Style="{StaticResource ProfileButton}"/>
+                    <Button x:Name="SignInBtn" Clicked="SignInBtn_Clicked" Text="SIGN IN" Style="{StaticResource ProfileButton}"/>
                 </StackLayout>
 
 

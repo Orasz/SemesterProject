@@ -13,10 +13,10 @@
             <StackLayout Padding="20" HorizontalOptions="Center" VerticalOptions="Fill">
                 <Image Source="offer.png" Aspect="AspectFill"/>
                 <Label Text="The Offer is Available here:" Margin="0,50,0,0 " Style="{StaticResource OfferHeadingText}"/>
-                <Label Text="Name Binding:"/>
-                <Label Text="Adress Binding"/>
-                <Label Text="Phone Number Binding:"/>
-                <Label Text="Contact Binding"/>
+                    <Label x:Name="Namelbl" Text="{Binding Name}"/>
+                <Label x:Name="Addresslbl" Text="Adress Binding"/>
+                <Label x:Name="Phonelbl" Text="Phone Number Binding:"/>
+                <Label x:Name="Urllbl" Text="Contact Binding"/>
             </StackLayout>
             <StackLayout HorizontalOptions="Start" Padding="10,80,0,0">
                 <Label Text="Location:" Margin="10,0,0,0" Style="{StaticResource OfferHeadingText}"/>

@@ -3,28 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HappyPass.Page1" Title="Offers" Icon="star.png">
     <ScrollView>
-        <StackLayout>
-            <StackLayout>
-                <!-- Place new controls here -->
-                <Frame HasShadow="True">
-                    <Label Text="Your Be Happy Pass Card"
-                Style="{StaticResource ProfilePText}"/>
-                </Frame>
-                <StackLayout>
-                    <Image Source="legohappypass.png" Aspect="AspectFit"/>
-                </StackLayout>
-                <StackLayout Padding="50" >
-                    <Button Text="Often Asked                                         >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
-                    <Button Text="Used Offers                                         >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
-                    <Button Text="Your Tickets                                        >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
-                </StackLayout>
-            </StackLayout>
-            <StackLayout Margin="20,35,20,20">
-                <Entry x:Name="nameEntry"
-               Placeholder="Enter name" />
-                <Entry x:Name="ageEntry"
-               Placeholder="Enter age" />
-            </StackLayout>
-        </StackLayout>
+        <ListView x:Name="myList" HasUnevenRows="true">
+
+            <ListView.ItemTemplate>
+                
+                <DataTemplate>
+                    <ViewCell >
+                        <!-- Here we make a Horizontal orientation with the help of StackLayout-->
+                        <StackLayout Margin="5" HeightRequest="300">
+                            <StackLayout VerticalOptions="Center">
+                                <Image Source="{Binding Image}" Aspect="AspectFill"/>
+                                    <Label  Text="{Binding Name}" TextColor="#1C5AD8" />
+                                    <Label Text="{Binding Address}" TextColor="#1C5AD8" />
+                                <Label Text="{Binding Phone}" TextColor="#1C5AD8" />
+                                <Label Text="{Binding Url}" TextColor="#1C5AD8" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ScrollView>
 </ContentPage>
