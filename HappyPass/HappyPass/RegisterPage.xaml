@@ -1,65 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HappyPass.RegisterPage">
-    <Grid RowSpacing="0" BackgroundColor="LightBlue">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+             x:Class="HappyPass.RegisterPage"
+             BackgroundColor="{StaticResource MainBlue}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout>
+                    <Label Text="Welcome to &#10; Be Happy Pass"
+             Style="{StaticResource ProfileHeading1}" Margin="0, 20, 0, 10"/>
+                    <BoxView BackgroundColor="{StaticResource PureWhite}"
+               HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <!--&#10; is a breakpoint-->
 
-        <!--HEEADER SECTION-->
-        <StackLayout Grid.Row="0">
-            <Label Text="Welvome to 
-                   BE HAPPY PASS" XAlign="Center" FontSize="Large" Margin="0,20,0,0" />
-            <BoxView BackgroundColor="White" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
-        </StackLayout>
+                <StackLayout>
+                    <Label Text="If you wish to receive customised offers &#10; you can fill out the information below. &#10; This way you only receive information &#10;that is relevat to you and your family. &#10; Otherwise you can continue &#10; and use the app as is." Style="{StaticResource LoginPText}"/>
+                    <Button Text="Continue without adding info"  Style="{StaticResource ProfileButton}"/>
+                </StackLayout>
 
+                <StackLayout>
+                    <Entry x:Name="NameEntry" Placeholder="Name" Style="{StaticResource EntryLoginField}" />
+                    <Entry x:Name="AgeEntry" Placeholder="Age" Style="{StaticResource EntryLoginField}"/>
+                    <Entry x:Name="EmailEntry" Placeholder="Email" Style="{StaticResource EntryLoginField}"/>
+                    <Entry x:Name="AdressEntry" Placeholder="Adress" Style="{StaticResource EntryLoginField}"/>
+                    <Entry x:Name="GenderEntry" Placeholder="Gender"  Style="{StaticResource EntryLoginField}"/>
+                    <Entry x:Name="NumChildEntry" Placeholder="NumChild" Style="{StaticResource EntryLoginField}"/>
+                    <Entry x:Name="ChildAgeRangeEntry" Placeholder="ChildAgeRange" Style="{StaticResource EntryLoginField}"/>
+                    <Entry x:Name="ParentStatusEntry" Placeholder="ParentStatus" Style="{StaticResource EntryLoginField}"/>
+                    <Entry x:Name="CreditcardEntry" Placeholder="Creditcard" Style="{StaticResource EntryLoginField}"/>
+                    <Entry x:Name="SoMeEntry" Placeholder="Connect to social media" Style="{StaticResource EntryLoginField}"/>
+                    <Entry x:Name="UsernameEntry" Placeholder="Username" Style="{StaticResource EntryLoginField}"/>
+                    <Entry x:Name="PasswordEntry" Placeholder="Password" Style="{StaticResource EntryLoginField}"/>
+                    <Button x:Name="ContinueBtn" Text="Continue" Style="{StaticResource EntryLoginField}"/>
+                </StackLayout>
 
-        <!--LOGIN TEXT SECTION-->
-        <Grid Grid.Row="1">
-            
-            <Label Text="If you wish to receive customised offers
-                   you can fill out the information below.
-                   This way you only receive information
-                   that is relevat to you and your family.
-                   Otherwise you can continue
-                   and use the app as is" XAlign="Center"/>
-            <Label Text="Back" Margin="0,20,0,0" XAlign="Center" />
-            <Button Text="Continue without adding info"  Clicked="ContinueBtn_Clicked"/>
-        </Grid>
-
-        <StackLayout Grid.Row="2">
-            <Label Text="Back" Margin="0,20,0,0" XAlign="Center" />
-            <Label Text="Name"/>
-            <Entry x:Name="NameEntry" Placeholder="Name"/>
-            <Label Text="Age"/>
-            <Entry x:Name="AgeEntry" Placeholder="Age"/>
-            <Label Text="Email"/>
-            <Entry x:Name="EmailEntry" Placeholder="EmailID"/>
-            <Label Text="Adress"/>
-            <Entry x:Name="AdressEntry" Placeholder="Adress"/>
-            <Label Text="Gender"/>
-            <Entry x:Name="GenderEntry" Placeholder="Gender"/>
-            <Label Text="Number of Children"/>
-            <Entry x:Name="NumChildEntry" Placeholder="NumChild"/>
-            <Label Text="Age range of children"/>
-            <Entry x:Name="ChildAgeRangeEntry" Placeholder="ChildAgeRange"/>
-            <Label Text="Are you mom, dad, grandparent etc"/>
-            <Entry x:Name="ParentStatusEntry" Placeholder="ParentStatus"/>
-            <Label Text="Attatch credit card information"/>
-            <Entry x:Name="CreditcardEntry" Placeholder="Creditcard"/>
-            <Label Text="Social Medias"/>
-            <Entry x:Name="SoMeEntry" Placeholder="SoMe"/>
-            <Label Text="Username"/>
-            <Entry x:Name="UsernameEntry" Placeholder="Username"/>
-            <Label Text="Password"/>
-            <Entry x:Name="PasswordEntry" Placeholder="Password"/>
-            <Button x:Name="ContinueBtn" Clicked="ContinueBtn_Clicked" Text="Continue"/>
-        </StackLayout>
-
-        
-    </Grid>
-
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

@@ -1,61 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:loginwireframe"
-             x:Class="HappyPass.MainPage">
+             x:Class="HappyPass.MainPage"
+             BackgroundColor="{StaticResource MainBlue}">
+    <ScrollView>
 
-    <Grid RowSpacing="0" BackgroundColor="LightBlue">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Welcome to &#10; Be Happy Pass"
+             Style="{StaticResource ProfileHeading1}" Margin="0, 20, 0, 10"/>
+                <BoxView BackgroundColor="{StaticResource PureWhite}"
+               HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <!--&#10; is a breakpoint-->
+            <StackLayout>
+                <Label Text="Login with QR or unique number"
+             Style="{StaticResource LoginPText}" Margin="0, 15, 0, 10"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image x:Name="QRCode" Source="qrIcon.png" WidthRequest="100" HeightRequest="100" 
+             HorizontalOptions="End" Margin="55, 0, 0, 0"/>
+                <Image x:Name="UniqueNr" Source="uniquenrIcon.png" WidthRequest="100" HeightRequest="100" 
+             HorizontalOptions="Start" Margin="50, 0, 0, 0"/>
 
-        <!--HEEADER SECTION-->
-        <StackLayout Grid.Row="0">
-            <Label Text="BE HAPPY PASS" XAlign="Center" FontSize="Large" Margin="0,20,0,0" />
-            <BoxView BackgroundColor="White" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Help unique number?" XAlign="Center" Margin="35, 5, 0, 0" Style="{StaticResource PureWhite}"/>
+                <Label Text="Help unique number?" XAlign="Center" Margin="25, 5, 0, 0" Style="{StaticResource PureWhite}"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Already have a Be Happy Pass?" 
+                Style="{StaticResource LoginPText}" Margin="0, 20, 0, 10"/>
+                <Button Text="Sign in" Style="{StaticResource ProfileButton}">
+
+                </Button>
+
+            </StackLayout>
+            <Image x:Name="BottomImage" Source="legoland.jpg" Aspect="AspectFill" Margin="0, 10, 0, 0"/>
+
+
         </StackLayout>
 
 
-        <!--LOGIN TEXT SECTION-->
-        <Label Text="Login with QR or unique number" Grid.Row="1" XAlign="Center"/>
-        
-
-        <!--TEXT SECTION SECTION-->
-        <Grid Grid.Row="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <StackLayout Grid.Column="0">
-                <Image x:Name="QrImg" Source="qrcode.png" WidthRequest="75" HeightRequest="75"/>
-                <Label 
-                    x:Name="HelpQrLbl" Text="Help qr code?" XAlign="Center"/>
-            </StackLayout>
-            <StackLayout Grid.Column="1">
-                <Image x:Name="NumberImg" Source="qrcode.png" WidthRequest="75" HeightRequest="75"/>
-                <Label x:Name="HelpNumberLbl" Text="Help unique number?" XAlign="Center"/>
-            </StackLayout>
-            
-        </Grid>
-
-        <!--BOTTON SECTION-->
-        <StackLayout Grid.Row="3">
-            <Label Text="Already a Be Happy Pass?" Margin="0,20,0,0" XAlign="Center" />
-            <Button x:Name="SignInBtn"
-                    Clicked="SignInBtn_Clicked"
-                Text="SIGN IN"/>
-        </StackLayout>
-        
-        <!--BUTTOM/LEGOLANDIMAGE SECTION-->
-        <Image Source="legoland.jpg" Aspect="AspectFill" Grid.Row="4"/>
-
-        
-
-    </Grid>
-
+    </ScrollView>
 </ContentPage>

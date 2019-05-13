@@ -1,50 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:HappyPass"
-             x:Class="HappyPass.Help2Page">
+             x:Class="HappyPass.Help2Page"
+             BackgroundColor="{StaticResource MainBlue}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout>
+                    <Label Text="Welcome to &#10; Be Happy Pass"
+             Style="{StaticResource ProfileHeading1}" Margin="0, 20, 0, 10"/>
+                    <BoxView BackgroundColor="{StaticResource PureWhite}"
+               HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <!--&#10; is a breakpoint-->
 
-    <Grid RowSpacing="0" BackgroundColor="LightBlue">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+                <StackLayout>
+                    <Label Text="Login with QR Scan" Style="{StaticResource LoginPText}"/>
 
-        <!--HEEADER SECTION-->
-        <StackLayout Grid.Row="0">
-            <Label Text="BE HAPPY PASS" XAlign="Center" FontSize="Large" Margin="0,20,0,0" />
-            <BoxView BackgroundColor="White" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
-        </StackLayout>
+                    <Image Source="uniquenrIcon.png" WidthRequest="75" HeightRequest="75"/>
+
+                    <Label Text="When you have booked a stay at one of the &#10; hotels at Legoland Billund Resort you have &#10; receieved a unique code which you can use to &#10; login to the Be Happy Pass app. You can also &#10; scan the QR code." Style="{StaticResource LoginPText}"/>
+
+                    <Button Text="Back" Style="{StaticResource ProfileButton}" Margin="0, 20, 0, 0"></Button>
 
 
-        <!--LOGIN TEXT SECTION-->
-        <Label Text="Login with unique number" Grid.Row="1" XAlign="Center"/>
-
-
-        <!--TEXT SECTION SECTION-->
-        <Grid Grid.Row="2">
-            <Image Source="qrcode.png" WidthRequest="75" HeightRequest="75"/>
-            <Label Text="When you have booked a stay at one of the
-                   hotels at Legoland Billund Resort you have
-                   received a unique code which you can use to
-                   login in to the Be Happy Pass app. You can also
-                   scan the QR code." XAlign="Center"/>
-        </Grid>
-
-        <!--BOTTON SECTION-->
-        <StackLayout Grid.Row="3">
-            <Label Text="Back" Margin="0,20,0,0" XAlign="Center" />
-            
-        </StackLayout>
-
-        <!--BUTTOM/LEGOLANDIMAGE SECTION-->
-        <Image Source="legoland.jpg" Aspect="AspectFill" Grid.Row="4"/>
+                </StackLayout>
 
 
 
-    </Grid>
-
+                <Image x:Name="BottomImage" Source="legoland.jpg" Aspect="AspectFill" Margin="0, 10, 0, 0"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

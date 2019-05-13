@@ -5,9 +5,10 @@
              xmlns:custom="clr-namespace:HappyPass"
              x:Class="HappyPass.Page4" Title="Account"  Icon="account.png">
     <ContentPage.Content>
-        <StackLayout >
+        <ScrollView>
+            <StackLayout >
 
-            <Label HorizontalTextAlignment="Center"
+                <Label HorizontalTextAlignment="Center"
                        HorizontalOptions="CenterAndExpand"
                        VerticalTextAlignment="Center"
                        VerticalOptions="Center"
@@ -16,68 +17,87 @@
                        TextColor="#2D8FD1"
                        Text="Your profile"
                        TranslationY="5"/>
-            <!--Dropdown menu here-->
-            <Button WidthRequest="45" HorizontalOptions="End" TranslationX="-5" TranslationY="-30"/>
-            <StackLayout>
-                <Image Source="profileCircle.png" HeightRequest="150" />
-                <Label HorizontalTextAlignment="Center"
+                <!--Dropdown menu here-->
+                <Button WidthRequest="45" HorizontalOptions="End" TranslationX="-5" TranslationY="-30"/>
+                <StackLayout>
+                    <Image Source="profileCircle.png" HeightRequest="150" />
+                    <Label HorizontalTextAlignment="Center"
                        FontSize="14"
                        TextColor="#2D8FD1"
                        Text="Friedrich Heinberg" />
 
-            </StackLayout>
+                </StackLayout>
+                <!--Pickers-->
+                <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand">
+                    <Picker x:Name="AgePicker"
+                        Title="Age"
+                        Margin=" 10,0,0,0"/>
+                    <Picker x:Name="KidsPicker"
+                        Title="Kids"
+                        Margin=" 20,0,0,0"/>
+                    <Picker x:Name="SexPicker"
+                        Title="Sex"
+                        Margin=" 20,0,0,0"/>
+                    <Picker x:Name="CountryPicker"
+                        Title="Country"
+                        Margin=" 20,0,0,0"/>
 
-            <StackLayout Orientation="Horizontal"
-                         HorizontalOptions="CenterAndExpand" Margin="0,30,0,10">
-                <!--images to be added depending on user, functionality-->
-                <Label 
+                </StackLayout>
+                <!--labels-->
+                <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand" Margin="0,0,0,10">
+                    <!--images to be added depending on user, functionality-->
+
+                    <Label 
                        Margin="20,0,20,0"
                        HorizontalOptions="CenterAndExpand" 
                        FontSize="10"
                        TextColor="#2D8FD1"
                        Text="Age" />
-                <Label
+                    <Label
                        Margin="20,0,20,0"
                        HorizontalOptions="CenterAndExpand" 
                        FontSize="10"
                        TextColor="#2D8FD1"
                        Text="Kids" />
-                <Label 
+                    <Label 
                        Margin="20,0,20,0"
                        HorizontalOptions="CenterAndExpand"                    
                        FontSize="10"
                        TextColor="#2D8FD1"
                        Text="Sex" />
-                <Label
+                    <Label
                        Margin="20,0,20,0"
                        HorizontalOptions="CenterAndExpand"                     
                        FontSize="10"
                        TextColor="#2D8FD1"
                        Text="Country" />
-            </StackLayout>
-            <Label 
+                </StackLayout>
+                <!--Interests section-->
+                <Label 
                        HorizontalOptions="CenterAndExpand"                     
                        FontSize="14"
                        FontAttributes="Bold"
                        TextColor="#2D8FD1"
                        Text="Interest" />
-            <!--icons are too big, center and expand is not the right way,probably need Height&Width request-->
-            <StackLayout Orientation="Horizontal"
+
+                <StackLayout Orientation="Horizontal"
                          HorizontalOptions="Center">
-                <Image Source="iconNatur.png"
+                    <Image Source="iconNatur.png"
                        HeightRequest="45"
                        WidthRequest="45"/>
-                <Image Source="iconBylivshop.png"
+                    <Image Source="iconBylivshop.png"
                        HeightRequest="45"
                        WidthRequest="45"
                        Margin="25,0"/>
-                <Image Source="iconGodehistorier.png"
+                    <Image Source="iconGodehistorier.png"
                        HeightRequest="45"
                        WidthRequest="45"/>
-            </StackLayout>
-            <ScrollView>
+                </StackLayout>
+                <!--Entries section-->
                 <StackLayout>
-                  <!--  <Entry FontSize="14"
+                    <!--  <Entry FontSize="14"
                    FontAttributes="Bold"
                    Placeholder="Email:      freidh@gmail.com"
                    Margin="10,10,10,15"
@@ -103,7 +123,7 @@
                 if it's possible to put entry in it -->
                     <Grid>
                         <Grid.RowDefinitions>
-                        <RowDefinition Height="70"/>
+                            <RowDefinition Height="70"/>
                             <RowDefinition Height="70"/>
                             <RowDefinition Height="70"/>
                         </Grid.RowDefinitions>
@@ -114,7 +134,6 @@
                              IsClippedToBounds="true"
                              BackgroundColor="{StaticResource DarkBlue}"
                              Margin="10,0,10,0" >
-                            <!--Editor Placeholder="Email: fried@gmail.com" /-->
                             <Entry
                                 x:Name="EmailEntry"
                                 Placeholder="Email:      fried@gmail.com"/>
@@ -143,7 +162,8 @@
                         </Frame>
                     </Grid>
                 </StackLayout>
-            </ScrollView>
-        </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
