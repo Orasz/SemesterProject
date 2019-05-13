@@ -3,12 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HappyPass.Faqpage">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="What happens if I lose my Be Happy Pass card?" TextColor="Blue" />
-            <Label Text="Can I request earlty check-in and late check-out? " TextColor="Blue" />
-            <Label Text="How do I book a Hotel?"/>
-            <Label Text="How many days are my theme park tickets valid for in my hotel package?" TextColor="Blue"/>
-            <Label Text="• Is breakfast included in my hotel booking?" TextColor="Blue"/>
+        <ScrollView>
+        <StackLayout BackgroundColor="{StaticResource PureWhite}">
+            <Frame BackgroundColor="{StaticResource PureWhite}" HasShadow="True">
+                <Label Text="Often asked questions"
+                Style="{StaticResource ProfilePText}"/>
+            </Frame>
+            <StackLayout VerticalOptions="StartAndExpand" Padding="0,20,0,0">
+                <Label Text="• What happens if I lose my Be Happy Pass card? " Style="{StaticResource TextColor}" Margin="30"/>
+                <Label Text="• Can I request early check-in &amp; late check-out?" Style="{StaticResource TextColor}" Margin="30" />
+                <Label Text="• How do I book a Hotel?" Style="{StaticResource TextColor}" Margin="30"/>
+                <Label Text="• How many days are my theme park tickets valid for in my hotel package?" Style="{StaticResource TextColor}" Margin="30"/>
+                <Label Text="• Is breakfast included in my hotel booking?" Style="{StaticResource TextColor}" Margin="30"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Start" Padding="20">
+                <Button Text="Back" FontAttributes="None" BackgroundColor="{StaticResource LightBlue}" TextColor="{StaticResource MainBlue}" CornerRadius="50"/>
+            </StackLayout>
         </StackLayout>
+    </ScrollView>
     </ContentPage.Content>
 </ContentPage>

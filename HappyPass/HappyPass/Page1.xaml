@@ -2,9 +2,29 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HappyPass.Page1" Title="Offers" Icon="star.png">
-    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="{Binding title}" TextColor="Black"/>
-        <Label Text="{Binding date}" TextColor="Black"/>
-        <Label Text="This is a test"/>
-    </StackLayout>
+    <ScrollView>
+        <StackLayout>
+            <StackLayout>
+                <!-- Place new controls here -->
+                <Frame HasShadow="True">
+                    <Label Text="Your Be Happy Pass Card"
+                Style="{StaticResource ProfilePText}"/>
+                </Frame>
+                <StackLayout>
+                    <Image Source="legohappypass.png" Aspect="AspectFit"/>
+                </StackLayout>
+                <StackLayout Padding="50" >
+                    <Button Text="Often Asked                                         >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
+                    <Button Text="Used Offers                                         >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
+                    <Button Text="Your Tickets                                        >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Margin="20,35,20,20">
+                <Entry x:Name="nameEntry"
+               Placeholder="Enter name" />
+                <Entry x:Name="ageEntry"
+               Placeholder="Enter age" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

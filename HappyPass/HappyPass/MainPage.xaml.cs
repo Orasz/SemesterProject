@@ -14,8 +14,8 @@ namespace HappyPass
             InitializeComponent();
             HelpQrLbl.GestureRecognizers.Add(new TapGestureRecognizer((view) => OnHelpQrLblClicked()));
             HelpNumberLbl.GestureRecognizers.Add(new TapGestureRecognizer((view) => OnHelpNumberLblClicked()));
-            NumberImg.GestureRecognizers.Add(new TapGestureRecognizer((view) => OnNumberImgClicked()));
-            QrImg.GestureRecognizers.Add(new TapGestureRecognizer((view) => OnNumberImgClicked()));
+            UniqueNr.GestureRecognizers.Add(new TapGestureRecognizer((view) => OnNumberImgClicked()));
+            QRCode.GestureRecognizers.Add(new TapGestureRecognizer((view) => OnNumberImgClicked()));
         }
 
         private async void OnNumberImgClicked()

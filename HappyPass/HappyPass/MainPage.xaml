@@ -25,8 +25,8 @@
 
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Label Text="Help unique number?" XAlign="Center" Margin="35, 5, 0, 0" Style="{StaticResource PureWhite}"/>
-                <Label Text="Help unique number?" XAlign="Center" Margin="25, 5, 0, 0" Style="{StaticResource PureWhite}"/>
+                <Label x:Name="HelpQrLbl" Text="Help unique number?" XAlign="Center" Margin="35, 5, 0, 0" Style="{StaticResource PureWhite}"/>
+                <Label x:Name="HelpNumberLbl" Text="Help unique number?" XAlign="Center" Margin="25, 5, 0, 0" Style="{StaticResource PureWhite}"/>
             </StackLayout>
 
             <StackLayout>
