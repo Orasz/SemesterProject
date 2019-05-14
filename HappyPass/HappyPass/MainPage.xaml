@@ -7,26 +7,26 @@
 
         <StackLayout>
             <StackLayout>
-                <Label Text="Welcome to &#10; Be Happy Pass"
+                <Label Text="Be Happy Pass"
              Style="{StaticResource ProfileHeading1}" Margin="0, 20, 0, 10"/>
                 <BoxView BackgroundColor="{StaticResource PureWhite}"
                HeightRequest="1" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
             <!--&#10; is a breakpoint-->
             <StackLayout>
-                <Label Text="Login with QR or unique number"
+                <Label Text="Login with QR scan or unique number"
              Style="{StaticResource LoginPText}" Margin="0, 15, 0, 10"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Image x:Name="QRCode" Source="qrIcon.png" WidthRequest="100" HeightRequest="100" 
-             HorizontalOptions="End" Margin="55, 0, 0, 0"/>
+             HorizontalOptions="End" Margin="60, 0, 0, 0"/>
                 <Image x:Name="UniqueNr" Source="uniquenrIcon.png" WidthRequest="100" HeightRequest="100" 
              HorizontalOptions="Start" Margin="50, 0, 0, 0"/>
 
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Label x:Name="HelpQrLbl" Text="Help unique number?" XAlign="Center" Margin="35, 5, 0, 0" Style="{StaticResource PureWhite}"/>
-                <Label x:Name="HelpNumberLbl" Text="Help unique number?" XAlign="Center" Margin="25, 5, 0, 0" Style="{StaticResource PureWhite}"/>
+                <Label x:Name="HelpQrLbl" Text="Help?" XAlign="Center" Margin="90, 5, 0, 0"  Style="{StaticResource LoginPText}"/>
+                <Label x:Name="HelpNumberLbl" Text="Help?" XAlign="Center" Margin="110, 5, 0, 0"  Style="{StaticResource LoginPText}"/>
             </StackLayout>
 
             <StackLayout>
