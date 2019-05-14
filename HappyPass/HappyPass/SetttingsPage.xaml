@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HappyPass.SetttingsPage">
+    <ContentPage.Content>
+    
+        <StackLayout>
+            <StackLayout>
+                <Button WidthRequest="45" HorizontalOptions="End" Margin="0,5,10,0"/>
+            </StackLayout>
+            <StackLayout Margin="10,-10,0,0">
+                <Label Text="Settings" Style="{StaticResource ProfileInformationText}" />
+                <Label Text="Edit Profile" Style="{StaticResource ProfileInformationText}"/>
+                <Label Text="Privacy Policy" Style="{StaticResource ProfileInformationText}"/>
+                <Label Text="Sign Out" Style="{StaticResource ProfileInformationText}"/>
+            </StackLayout>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

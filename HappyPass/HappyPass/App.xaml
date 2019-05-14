@@ -155,7 +155,7 @@
             <Setter Property="TextColor" Value="{StaticResource MainBlue}"/>
             <Setter Property="FontFamily" Value="{StaticResource PFont}"/>
             <Setter Property="FontSize" Value="{StaticResource SmallParagraph}"/>
-            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="HorizontalTextAlignment" Value="Start"/>
         </Style>
         <Style x:Key="ProfileInterestsText" TargetType="Label">
             <Setter Property="TextColor" Value="{StaticResource MainBlue}"/>
