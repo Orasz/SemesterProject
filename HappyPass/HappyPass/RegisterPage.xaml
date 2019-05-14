@@ -16,23 +16,55 @@
 
                 <StackLayout>
                     <Label Text="If you wish to receive customised offers &#10; you can fill out the information below. &#10; This way you only receive information &#10;that is relevat to you and your family. &#10; Otherwise you can continue &#10; and use the app as is." Style="{StaticResource LoginPText}"/>
-                    <Button Text="Continue without adding info"  Style="{StaticResource ProfileButton}" Clicked="ContinueBtn_Clicked"/>
+
+                    <StackLayout>
+                        <Button Text=" Continue without adding info "  Style="{StaticResource ProfileButton}" Clicked="ContinueBtn_Clicked"/>
+                    </StackLayout>
+                
                 </StackLayout>
 
                 <StackLayout>
+                    <Frame Style="{StaticResource EntryFrame}">
                     <Entry x:Name="NameEntry" Placeholder="Name" Style="{StaticResource EntryLoginField}" />
+                    </Frame>
+                    
+                    <Frame Style="{StaticResource EntryFrame}">
                     <Entry x:Name="AgeEntry" Placeholder="Age" Style="{StaticResource EntryLoginField}"/>
+                    </Frame>
+                    
+                    <Frame Style="{StaticResource EntryFrame}">
                     <Entry x:Name="EmailEntry" Placeholder="Email" Style="{StaticResource EntryLoginField}"/>
+                    </Frame>
+                    
+                    <Frame Style="{StaticResource EntryFrame}">
                     <Entry x:Name="AdressEntry" Placeholder="Adress" Style="{StaticResource EntryLoginField}"/>
+                    </Frame>
+                    
+                    <Frame Style="{StaticResource EntryFrame}">
                     <Entry x:Name="GenderEntry" Placeholder="Gender"  Style="{StaticResource EntryLoginField}"/>
-                    <Entry x:Name="NumChildEntry" Placeholder="NumChild" Style="{StaticResource EntryLoginField}"/>
-                    <Entry x:Name="ChildAgeRangeEntry" Placeholder="ChildAgeRange" Style="{StaticResource EntryLoginField}"/>
-                    <Entry x:Name="ParentStatusEntry" Placeholder="ParentStatus" Style="{StaticResource EntryLoginField}"/>
-                    <Entry x:Name="CreditcardEntry" Placeholder="Creditcard" Style="{StaticResource EntryLoginField}"/>
-                    <Entry x:Name="SoMeEntry" Placeholder="Connect to social media" Style="{StaticResource EntryLoginField}"/>
-                    <Entry x:Name="UsernameEntry" Placeholder="Username" Style="{StaticResource EntryLoginField}"/>
-                    <Entry x:Name="PasswordEntry" Placeholder="Password" Style="{StaticResource EntryLoginField}"/>
-                    <Button x:Name="ContinueBtn" Clicked="ContinueBtn_Clicked" Text="Continue" Style="{StaticResource EntryLoginField}"/>
+                    </Frame>
+                    
+                    <Frame Style="{StaticResource EntryFrame}">
+                    <Entry x:Name="NumChildEntry" Placeholder="Number of children" Style="{StaticResource EntryLoginField}"/>
+                    </Frame>
+                    
+                    <Frame Style="{StaticResource EntryFrame}">
+                    <Entry x:Name="ChildAgeRangeEntry" Placeholder="Age range of children" Style="{StaticResource EntryLoginField}"/>
+                    </Frame>
+                    
+                    <Frame Style="{StaticResource EntryFrame}">
+                    <Entry x:Name="ParentStatusEntry" Placeholder="Are you a parent or grandparent" Style="{StaticResource EntryLoginField}"/>
+                    </Frame>
+                    
+                    <Frame Style="{StaticResource EntryFrame}">
+                    <Entry x:Name="CreditcardEntry" Placeholder="Attach credit card info" Style="{StaticResource EntryLoginField}"/>
+                    </Frame>
+                    
+                    <Frame Style="{StaticResource EntryFrame}">
+                    <Entry x:Name="SoMeEntry" Placeholder="Connect to social medias" Style="{StaticResource EntryLoginField}"/>
+                    </Frame>
+                    
+                    <Button x:Name="Continue" Clicked="ContinueBtn_Clicked" Text="Continue" Style="{StaticResource ProfileButton}"/>
                 </StackLayout>
 
             </StackLayout>

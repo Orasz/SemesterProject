@@ -14,15 +14,18 @@
                 <!--&#10; is a breakpoint-->
 
                 <StackLayout>
-                    <Label Text="In this app you will find a wide range &#10; of offers that will let you experince more &#10; for less within the resort" Style="{StaticResource LoginPText}"/>
+                    <Label Text="In this app you will find a wide range &#10; of offers that will let you experince more for less within the resort" Style="{StaticResource LoginPText}"/>
 
-                    <Button x:Name="NextBtn" Text="NEXT" Style="{StaticResource ProfileButton}" Clicked="NextBtn_Clicked"/>
+                    <StackLayout Margin="0, 10, 0, 10">
+                        <Button x:Name="NextBtn" Text="NEXT" Style="{StaticResource ProfileButton}" Clicked="NextBtn_Clicked"/>
+                    </StackLayout>
+                
                 </StackLayout>
 
 
-
-
-                <Image Source="legoland.jpg" x:Name="BottomImage"  Aspect="AspectFill" Margin="0, 10, 0, 0"/>
+                <StackLayout>
+                    <Image Source="legoland.jpg" x:Name="BottomImage" VerticalOptions="End" Aspect="AspectFill" Margin="0, 10, 0, 0"/>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
