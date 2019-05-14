@@ -145,9 +145,6 @@
     <AndroidAsset Include="Resources\drawable\legoland.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Resources\drawable\map.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidAsset Include="Resources\drawable\navigationicon.png" />
   </ItemGroup>
   <ItemGroup>
@@ -203,6 +200,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\filterbtnbig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mapicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\map.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
