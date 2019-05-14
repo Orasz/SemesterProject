@@ -4,105 +4,115 @@
              x:Class="HappyPass.App">
     <Application.Resources>
         <ResourceDictionary>
-        <!-- Colors-->
-        <Color x:Key="PureWhite">#ffffff</Color>
-        <Color x:Key="PureBlack">#000000</Color>
+            <!-- Colors-->
+            <Color x:Key="PureWhite">#ffffff</Color>
+            <Color x:Key="PureBlack">#000000</Color>
 
 
-        <!--Blue Collection-->
-        <Color x:Key="MainBlue">#2d8fd1</Color>
-        <Color x:Key="LightBlue">#e5f1fa</Color>
-        <Color x:Key="DarkBlue">#1d94d2</Color>
+            <!--Blue Collection-->
+            <Color x:Key="MainBlue">#2d8fd1</Color>
+            <Color x:Key="LightBlue">#e5f1fa</Color>
+            <Color x:Key="DarkBlue">#1d94d2</Color>
 
 
-        <!--Icon colors-->
-        <Color x:Key="BlueIconColor">#2d8fd1</Color>
-        <Color x:Key="YellowIconColor">#fed73b</Color>
-        <Color x:Key="GrayIconColor">#525457</Color>
-        <Color x:Key="RedIconColor">#e9202d</Color>
+            <!--Icon colors-->
+            <Color x:Key="BlueIconColor">#2d8fd1</Color>
+            <Color x:Key="YellowIconColor">#fed73b</Color>
+            <Color x:Key="GrayIconColor">#525457</Color>
+            <Color x:Key="RedIconColor">#e9202d</Color>
 
 
 
 
-        <!-- Font sizes-->
-        <x:Double x:Key="HeadingOne">34</x:Double>
-        <x:Double x:Key="HeadingTwo">28</x:Double>
-        <x:Double x:Key="HeadingThree">25</x:Double>
-        <x:Double x:Key="Paragraph">16</x:Double>
-        <x:Double x:Key="SmallParagraph">14</x:Double>
+            <!-- Font sizes-->
+            <x:Double x:Key="HeadingOne">34</x:Double>
+            <x:Double x:Key="HeadingTwo">28</x:Double>
+            <x:Double x:Key="HeadingThree">25</x:Double>
+            <x:Double x:Key="Paragraph">16</x:Double>
+            <x:Double x:Key="SmallParagraph">14</x:Double>
 
 
-        <!-- Font families-->
-        <OnPlatform x:Key="HeadingFont" x:TypeArguments="x:String">
-            <!--<On Platform="iOS">LithosPro-Regular.otf</On> -->
-            <On Platform="Android">LithosPro-Regular.otf</On>
-        </OnPlatform>
-        <OnPlatform x:Key="PFont" x:TypeArguments="x:String">
-            <!--<On Platform="iOS">HelveticaNeue.ttf</On> -->
-            <On Platform="Android">HelveticaNeue.ttf</On>
-        </OnPlatform>
-        <OnPlatform x:Key="PFontBold" x:TypeArguments="x:String">
-            <!--<On Platform="iOS">HelveticaNeueBd.ttf</On> -->
-            <On Platform="Android">HelveticaNeueBd.ttf</On>
-        </OnPlatform>
-        <OnPlatform x:Key="PFontItalic" x:TypeArguments="x:String">
-            <!--<On Platform="iOS">HelveticaNeueIt.ttf</On> -->
-            <On Platform="Android">HelveticaNeueIt.ttf</On>
-        </OnPlatform>
+            <!-- Font families-->
+            <OnPlatform x:Key="HeadingFont" x:TypeArguments="x:String">
+                <!--<On Platform="iOS">LithosPro-Regular.otf</On> -->
+                <On Platform="Android">LithosPro-Regular.otf</On>
+            </OnPlatform>
+            <OnPlatform x:Key="PFont" x:TypeArguments="x:String">
+                <!--<On Platform="iOS">HelveticaNeue.ttf</On> -->
+                <On Platform="Android">HelveticaNeue.ttf</On>
+            </OnPlatform>
+            <OnPlatform x:Key="PFontBold" x:TypeArguments="x:String">
+                <!--<On Platform="iOS">HelveticaNeueBd.ttf</On> -->
+                <On Platform="Android">HelveticaNeueBd.ttf</On>
+            </OnPlatform>
+            <OnPlatform x:Key="PFontItalic" x:TypeArguments="x:String">
+                <!--<On Platform="iOS">HelveticaNeueIt.ttf</On> -->
+                <On Platform="Android">HelveticaNeueIt.ttf</On>
+            </OnPlatform>
 
 
-        <!-- New Styles-->
-        <Style x:Key="TextColor" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource MainBlue}"/>
-            <Setter Property="FontSize" Value="{StaticResource Paragraph}"/>
-        </Style>
-        <Style x:Key="ProfileHeading1" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource PureWhite}"/>
-            <Setter Property="FontFamily" Value="{StaticResource HeadingFont}"/>
-            <Setter Property="FontSize" Value="{StaticResource HeadingOne}"/>
-            <Setter Property="HorizontalTextAlignment" Value="Center"/>
-        </Style>
-        <Style x:Key="ProfileHeading2" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource PureWhite}"/>
-            <Setter Property="FontFamily" Value="{StaticResource HeadingFont}"/>
-            <Setter Property="FontSize" Value="{StaticResource HeadingTwo}"/>
-            <Setter Property="HorizontalTextAlignment" Value="Center"/>
-        </Style>
-        <Style x:Key="ProfileHeading3" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource PureWhite}"/>
-            <Setter Property="FontFamily" Value="{StaticResource HeadingFont}"/>
-            <Setter Property="FontSize" Value="{StaticResource HeadingThree}"/>
-            <Setter Property="HorizontalTextAlignment" Value="Center"/>
-        </Style>
-        <Style x:Key="ProfilePText" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource MainBlue}"/>
-            <Setter Property="FontFamily" Value="{StaticResource PFont}"/>
-            <Setter Property="FontSize" Value="{StaticResource Paragraph}"/>
-            <Setter Property="HorizontalTextAlignment" Value="Center"/>
-        </Style>
-        <Style x:Key="LoginPText" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource PureWhite}"/>
-            <Setter Property="FontFamily" Value="{StaticResource PFont}"/>
-            <Setter Property="FontSize" Value="{StaticResource Paragraph}"/>
-            <Setter Property="HorizontalTextAlignment" Value="Center"/>
-        </Style>
-        <Style x:Key="EntryLoginField" TargetType="Entry">
-            <Setter Property="TextColor" Value="{StaticResource MainBlue}"/>
-            <Setter Property="FontFamily" Value="{StaticResource PFont}"/>
-            <Setter Property="FontSize" Value="{StaticResource Paragraph}"/>
-            <Setter Property="BackgroundColor" Value="{StaticResource LightBlue}" />
-            <Setter Property="HeightRequest" Value="46" />
-            <Setter Property="WidthRequest" Value="55"/>
-        </Style>
+            <!-- New Styles-->
+            <Style x:Key="TextColor" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource MainBlue}"/>
+                <Setter Property="FontSize" Value="{StaticResource Paragraph}"/>
+            </Style>
+            <Style x:Key="ProfileHeading1" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource PureWhite}"/>
+                <Setter Property="FontFamily" Value="{StaticResource HeadingFont}"/>
+                <Setter Property="FontSize" Value="{StaticResource HeadingOne}"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="ProfileHeading2" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource PureWhite}"/>
+                <Setter Property="FontFamily" Value="{StaticResource HeadingFont}"/>
+                <Setter Property="FontSize" Value="{StaticResource HeadingTwo}"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="ProfileHeading3" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource PureWhite}"/>
+                <Setter Property="FontFamily" Value="{StaticResource HeadingFont}"/>
+                <Setter Property="FontSize" Value="{StaticResource HeadingThree}"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="ProfilePText" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource MainBlue}"/>
+                <Setter Property="FontFamily" Value="{StaticResource PFont}"/>
+                <Setter Property="FontSize" Value="{StaticResource Paragraph}"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="LoginPText" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource PureWhite}"/>
+                <Setter Property="FontFamily" Value="{StaticResource PFont}"/>
+                <Setter Property="FontSize" Value="{StaticResource Paragraph}"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="EntryLoginField" TargetType="Entry">
+                <Setter Property="TextColor" Value="{StaticResource MainBlue}"/>
+                <Setter Property="PlaceholderColor" Value="{StaticResource PureWhite}"/>
+                <Setter Property="FontFamily" Value="{StaticResource PFont}"/>
+                <Setter Property="FontSize" Value="{StaticResource Paragraph}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource LightBlue}" />
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="SelectionLength" Value="9999"/>
+            </Style>
+            <Style x:Key="EntryFrame" TargetType="Frame">
+                <Setter Property="CornerRadius" Value="25"/>
+                <Setter Property="Padding" Value="100,5,100,5"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="BorderColor" Value="{StaticResource PureWhite}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource LightBlue}"/>
+                <Setter Property="Margin" Value="0, 10, 0, 10"/>
+            </Style>
         <Style x:Key="ProfileButton" TargetType="Button">
             <Setter Property="TextColor" Value="{StaticResource MainBlue}"/>
             <Setter Property="FontFamily" Value="{StaticResource PFont}"/>
             <Setter Property="FontSize" Value="{StaticResource Paragraph}"/>
             <Setter Property="BackgroundColor" Value="{StaticResource LightBlue}" />
-            <Setter Property="HeightRequest" Value="46" />
-            <Setter Property="WidthRequest" Value="55"/>
             <Setter Property="BorderRadius" Value="25" />
-        </Style>
+            <Setter Property="BorderColor" Value="{StaticResource PureWhite}"/>
+            <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
         <Style x:Key="FilterText" TargetType="Label">
             <Setter Property="TextColor" Value="{StaticResource PureWhite}"/>
             <Setter Property="FontFamily" Value="{StaticResource PFont}"/>
