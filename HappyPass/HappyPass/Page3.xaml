@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HappyPass.Page3" Title="Location" Icon="location.png">
+             x:Class="HappyPass.Page3" Title="Location" Icon="locationsmallicon.png"
+             BackgroundImage="map.png">>
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="What happens if I lose my Be Happy Pass card?" TextColor="Blue" />
-            <Label Text="Can I request earlty check-in and late check-out? " TextColor="Blue" />
-            <Label Text="How do I book a Hotel?" TextColor="Blue" />
-            <Label Text="How many days are my theme park tickets valid for in my hotel package?" TextColor="Blue"/>
-            <Label Text="• Is breakfast included in my hotel booking?" TextColor="Blue"/>
+        <StackLayout>
+            <ImageButton x:Name="offer1" Source="mapicon.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="35, 5, 0, 0" HeightRequest="50" WidthRequest="50"/>
+            <ImageButton x:Name="offer2" Source="mapicon.png" VerticalOptions="End" HorizontalOptions="Start" Margin="35, 5, 0, 0" HeightRequest="50" WidthRequest="50"/>
+            <ImageButton x:Name="offer3" Source="mapicon.png" VerticalOptions="Start" HorizontalOptions="Center" Margin="35, 5, 0, 0" HeightRequest="50" WidthRequest="50"/>
+            <ImageButton x:Name="offer4" Source="mapicon.png" VerticalOptions="Center" HorizontalOptions="End" Margin="35,15, 0, 55" HeightRequest="50" WidthRequest="50"/>
+            <ImageButton x:Name="offer5" Source="mapicon.png" VerticalOptions="Start" HorizontalOptions="Center" Margin="35, 5, 0, 0" HeightRequest="50" WidthRequest="50"/>
+            <ImageButton x:Name="offer6" Source="mapicon.png" VerticalOptions="End" HorizontalOptions="End" Margin="10, 0, 10, 5" HeightRequest="50" WidthRequest="50"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
