@@ -7,20 +7,21 @@
             <StackLayout BackgroundColor="{StaticResource PureWhite}">
             <StackLayout>
                 <Frame BackgroundColor="{StaticResource PureWhite}" HasShadow="True">
-                    <Label Text="Offer Name" Style="{StaticResource ProfilePText}"/>
+                    <Label x:Name="OfferNamelbl" Text="Offer Name" Style="{StaticResource ProfilePText}"/>
                 </Frame>
             </StackLayout>
             <StackLayout Padding="20" HorizontalOptions="Center" VerticalOptions="Fill">
-                <Image Source="offer.png" Aspect="AspectFill"/>
+                <Image x:Name="OfferImg" Source="offer.png" Aspect="AspectFill"/>
                 <Label Text="The Offer is Available here:" Margin="0,50,0,0 " Style="{StaticResource OfferHeadingText}"/>
-                    <Label x:Name="Namelbl" Text="{Binding Name}"/>
+                    <Label x:Name="Namelbl" Text="Name something"/>
                 <Label x:Name="Addresslbl" Text="Adress Binding"/>
                 <Label x:Name="Phonelbl" Text="Phone Number Binding:"/>
                 <Label x:Name="Urllbl" Text="Contact Binding"/>
+                  
             </StackLayout>
             <StackLayout HorizontalOptions="Start" Padding="10,80,0,0">
                 <Label Text="Location:" Margin="10,0,0,0" Style="{StaticResource OfferHeadingText}"/>
-                <Image Source="location.png" WidthRequest="200" HeightRequest="200"/>
+                <Image x:Name="MapImg" Source="location.png" WidthRequest="200" HeightRequest="200"/>
             </StackLayout>
         </StackLayout>
         </ScrollView>

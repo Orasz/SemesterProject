@@ -3,18 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HappyPass.Page1" Title="Offers" Icon="star.png">
     <ScrollView>
-        <ListView x:Name="myList" HasUnevenRows="true">
+        <ListView x:Name="myList" HasUnevenRows="true" >
 
-            <ListView.ItemTemplate>
+            <ListView.ItemTemplate >
                 
                 <DataTemplate>
                     <ViewCell >
                         <!-- Here we make a Horizontal orientation with the help of StackLayout-->
                         <StackLayout Margin="5" HeightRequest="300">
                             <StackLayout VerticalOptions="Center">
-                                <Image Source="{Binding Image}" Aspect="AspectFill"/>
-                                    <Label  Text="{Binding Name}" TextColor="#1C5AD8" />
-                                    <Label Text="{Binding Address}" TextColor="#1C5AD8" />
+                                <Image Source="{Binding MainImage}" Aspect="AspectFill">
+                                </Image>
+                                <Label Text="{Binding OfferName}" TextColor="#1C5AD8" >
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="offerPage"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                                <Label  Text="{Binding Name}" TextColor="#1C5AD8" />
+                                <Label Text="{Binding Address}" TextColor="#1C5AD8" />
                                 <Label Text="{Binding Phone}" TextColor="#1C5AD8" />
                                 <Label Text="{Binding Url}" TextColor="#1C5AD8" />
                             </StackLayout>
