@@ -12,7 +12,8 @@ namespace HappyPass
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Help1Page : ContentPage
 	{
-		public Help1Page ()
+        [Obsolete]
+        public Help1Page ()
 		{
 			InitializeComponent ();
             QrImg.GestureRecognizers.Add(new TapGestureRecognizer((view) => OnImgClicked()));

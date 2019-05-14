@@ -16,6 +16,8 @@ namespace HappyPass
 
     public partial class Offer
     {
+        [JsonProperty("OfferName")]
+        public string OfferName { get; set; }
         [JsonProperty("Name")]
         public string Name { get; set; }
 
@@ -28,13 +30,20 @@ namespace HappyPass
         [JsonProperty("Url")]
         public string Url { get; set; }
 
-       [JsonProperty("Image")]
-        public string Image { get; set; }
+        [JsonProperty("MainImage")]
+        public string MainImage { get; set; }
+
+        [JsonProperty("MapImage")]
+        public string MapImage { get; set; }
+
+        //public Offerpage op { get; set; }
+
     }
 
     public partial class Offer
     {
         public static Offer[] FromJson(string json) => JsonConvert.DeserializeObject<Offer[]>(json, HappyPass.Converter.Settings);
+        
     }
 
     public static class Serialize

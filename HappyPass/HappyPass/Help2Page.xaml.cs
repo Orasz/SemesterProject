@@ -12,7 +12,8 @@ namespace HappyPass
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Help2Page : ContentPage
 	{
-		public Help2Page ()
+        [Obsolete]
+        public Help2Page ()
 		{
 			InitializeComponent ();
             NrImg.GestureRecognizers.Add(new TapGestureRecognizer((view) => OnImgClicked()));

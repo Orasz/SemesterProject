@@ -12,9 +12,21 @@ namespace HappyPass
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Offerpage : ContentPage
 	{
-		public Offerpage ()
-		{
-			InitializeComponent ();
-		}
-	}
+        public Offerpage()
+        {
+            InitializeComponent();
+        }
+
+        public Offerpage(string offName, string name, string address, string phone,string url, string mainImg, string mapImg)
+        {
+            InitializeComponent();
+            OfferImg.Source = mainImg;
+            OfferNamelbl.Text = offName;
+            Namelbl.Text = name;
+            Addresslbl.Text = address;
+            Phonelbl.Text = phone;
+            Urllbl.Text = url;
+            MapImg.Source = mapImg;
+        }
+    }
 }

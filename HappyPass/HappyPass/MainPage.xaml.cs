@@ -9,6 +9,7 @@ namespace HappyPass
 {
     public partial class MainPage : ContentPage
     {
+        [Obsolete]
         public MainPage()
         {
             InitializeComponent();
