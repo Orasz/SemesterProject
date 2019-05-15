@@ -19,8 +19,18 @@ namespace HappyPass
 
         private async void SignInBtn_Clicked(object sender, EventArgs e)
         {
-           
-            await Navigation.PushModalAsync(new TabbedRoot());
+            //check if user exists in the db, otherwise go to registerPage
+            if (!string.IsNullOrWhiteSpace(UniNumEntry.Text))
+            {
+                if (App.Database.CheckUserAsync(long.Parse(UniNumEntry.Text)))
+                {
+                    await Navigation.PushModalAsync(new TabbedRoot());
+                }
+                else
+                {
+                    await DisplayAlert("Error", "There's no user with this ID", "Close");
+                }
+            }
         }
     }
 }

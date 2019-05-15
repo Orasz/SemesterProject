@@ -25,6 +25,10 @@
 
                 <StackLayout>
                     <Frame Style="{StaticResource EntryFrame}">
+                        <Entry x:Name="UserIDEntry" Placeholder="UserID" Style="{StaticResource EntryLoginField}"/>
+                    </Frame>
+                    
+                    <Frame Style="{StaticResource EntryFrame}">
                     <Entry x:Name="NameEntry" Placeholder="Name" Style="{StaticResource EntryLoginField}" />
                     </Frame>
                     
@@ -37,7 +41,7 @@
                     </Frame>
                     
                     <Frame Style="{StaticResource EntryFrame}">
-                    <Entry x:Name="AdressEntry" Placeholder="Adress" Style="{StaticResource EntryLoginField}"/>
+                    <Entry x:Name="AddressEntry" Placeholder="Adress" Style="{StaticResource EntryLoginField}"/>
                     </Frame>
                     
                     <Frame Style="{StaticResource EntryFrame}">
@@ -52,9 +56,7 @@
                     <Entry x:Name="ChildAgeRangeEntry" Placeholder="Age range of children" Style="{StaticResource EntryLoginField}"/>
                     </Frame>
                     
-                    <Frame Style="{StaticResource EntryFrame}">
-                    <Entry x:Name="ParentStatusEntry" Placeholder="Are you a parent or grandparent" Style="{StaticResource EntryLoginField}"/>
-                    </Frame>
+
                     
                     <Frame Style="{StaticResource EntryFrame}">
                     <Entry x:Name="CreditcardEntry" Placeholder="Attach credit card info" Style="{StaticResource EntryLoginField}"/>
@@ -64,7 +66,7 @@
                     <Entry x:Name="SoMeEntry" Placeholder="Connect to social medias" Style="{StaticResource EntryLoginField}"/>
                     </Frame>
                     
-                    <Button x:Name="Continue" Clicked="ContinueBtn_Clicked" Text="Continue" Style="{StaticResource ProfileButton}"/>
+                    <Button x:Name="Continue" Clicked="RegisterBtnClicked" Text="Continue" Style="{StaticResource ProfileButton}"/>
                 </StackLayout>
 
             </StackLayout>

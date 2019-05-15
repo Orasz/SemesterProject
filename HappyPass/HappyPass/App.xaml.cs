@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,12 +8,26 @@ namespace HappyPass
 {
     public partial class App : Application
     {
+        static Database database;
+
+        public static Database Database
+        {
+            get
+            {
+                if(database == null)
+                {
+                    database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "users.db3"));
+                }
+                return database;
+            }
+        }
+
         [Obsolete]
         public App()
         {
             InitializeComponent();
             
-            MainPage = new TabbedRoot();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
