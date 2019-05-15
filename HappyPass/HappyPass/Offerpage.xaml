@@ -7,18 +7,17 @@
             <StackLayout BackgroundColor="{StaticResource PureWhite}">
             <StackLayout>
                 <Frame BackgroundColor="{StaticResource PureWhite}" HasShadow="True">
-                    <Label x:Name="OfferNamelbl" Text="Offer Name" Style="{StaticResource ProfilePText}"/>
+                        <Label x:Name="OfferNamelbl" Text="Eat well and save 10% at the same time" Style="{StaticResource ProfilePText}"/>
                 </Frame>
             </StackLayout>
             <StackLayout Padding="20" HorizontalOptions="Center" VerticalOptions="Fill">
-                <Image x:Name="OfferImg" Source="offer.png" Aspect="AspectFill"/>
+                    <Image x:Name="OfferImg" Source="https://images.jv.dk/20/1657720_1280_867_0_0_0_0_2.jpg" Aspect="AspectFill"/>
                 <Label Text="The Offer is Available here:" Margin="0,50,0,0 " Style="{StaticResource OfferHeadingText}"/>
-                    <Label x:Name="Namelbl" Text="Name something"/>
-                <Label x:Name="Addresslbl" Text="Adress Binding"/>
-                <Label x:Name="Phonelbl" Text="Phone Number Binding:"/>
-                <Label x:Name="Urllbl" Text="Contact Binding"/>
-                  
-            </StackLayout>
+                    <Label x:Name="Namelbl" Text="Café Grindsted"/>
+                    <Label x:Name="Addresslbl" Text="Vestergade 8 - Billund"/>
+                    <Label x:Name="Phonelbl" Text="+45 75 31 07 07"/>
+                    <Label x:Name="Urllbl" Text="www.cafeggrindsted.dk"/>
+                </StackLayout>
             <StackLayout HorizontalOptions="Start" Padding="10,80,0,0">
                 <Label Text="Location:" Margin="10,0,0,0" Style="{StaticResource OfferHeadingText}"/>
                 <Image x:Name="MapImg" Source="location.png" WidthRequest="200" HeightRequest="200"/>

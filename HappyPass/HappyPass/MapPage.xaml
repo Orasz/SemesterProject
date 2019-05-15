@@ -4,13 +4,42 @@
              x:Class="HappyPass.MapPage"
              BackgroundImage="map.png">
     <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
             <StackLayout>
-                <ImageButton x:Name="offer1" Source="mapicon.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="35, 5, 0, 0" HeightRequest="50" WidthRequest="50"/>
-                <ImageButton x:Name="offer2" Source="mapicon.png" VerticalOptions="End" HorizontalOptions="Start" Margin="35, 5, 0, 0" HeightRequest="50" WidthRequest="50"/>
-                <ImageButton x:Name="offer3" Source="mapicon.png" VerticalOptions="Start" HorizontalOptions="Center" Margin="35, 5, 0, 0" HeightRequest="50" WidthRequest="50"/>
-                <ImageButton x:Name="offer4" Source="mapicon.png" VerticalOptions="Center" HorizontalOptions="End" Margin="35,15, 0, 55" HeightRequest="50" WidthRequest="50"/>
-                <ImageButton x:Name="offer5" Source="mapicon.png" VerticalOptions="Start" HorizontalOptions="Center" Margin="35, 5, 0, 0" HeightRequest="50" WidthRequest="50"/>
-                <ImageButton x:Name="offer6" Source="mapicon.png" VerticalOptions="End" HorizontalOptions="End" Margin="10, 0, 10, 5" HeightRequest="50" WidthRequest="50"/>
+                <ImageButton Source="filterbtnsmll.png">
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Transparent"/>
+                                        <Setter Property="HeightRequest" Value="50"/>
+                                        <Setter Property="WidthRequest" Value="50"/>
+                                    </VisualState.Setters>
+                            </VisualState>  
+
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="Source" Value="openfilter.png"/>
+                                    <Setter Property="HeightRequest" Value="150"/>
+                                    <Setter Property="WidthRequest" Value="150"/>
+                                    <Setter Property="Aspect" Value="AspectFit"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                </ImageButton>
             </StackLayout>
+        
+            <StackLayout>
+                <ImageButton x:Name="offer1" Source="mapicon.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="35, 5, 0, 0" HeightRequest="50" WidthRequest="50" BackgroundColor="Transparent"/>
+                <ImageButton x:Name="offer2" Source="mapicon.png" VerticalOptions="End" HorizontalOptions="Start" Margin="35, 5, 0, 0" HeightRequest="50" WidthRequest="50" BackgroundColor="Transparent"/>
+                <ImageButton x:Name="offer3" Source="mapicon.png" VerticalOptions="Start" HorizontalOptions="Center" Margin="35, 5, 0, 0" HeightRequest="50" WidthRequest="50" BackgroundColor="Transparent"/>
+                <ImageButton x:Name="offer4" Source="mapicon.png" VerticalOptions="Center" HorizontalOptions="End" Margin="35,15, 0, 55" HeightRequest="50" WidthRequest="50" BackgroundColor="Transparent"/>
+                <ImageButton x:Name="offer5" Source="mapicon.png" VerticalOptions="Start" HorizontalOptions="Center" Margin="35, 5, 0, 0" HeightRequest="50" WidthRequest="50" BackgroundColor="Transparent"/>
+                <ImageButton x:Name="offer6" Source="mapicon.png" VerticalOptions="End" HorizontalOptions="End" Margin="10, 0, 10, 5" HeightRequest="50" WidthRequest="50" BackgroundColor="Transparent"/>
+            </StackLayout>
+        </StackLayout>
+            </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace HappyPass
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MapPage : ContentPage
+    public partial class SetttingsPage : ContentPage
     {
-        public MapPage()
+        public SetttingsPage()
         {
             InitializeComponent();
         }
-
     }
 }
