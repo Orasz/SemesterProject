@@ -16,5 +16,10 @@ namespace HappyPass
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void FAQBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Faqpage());
+        }
+    }
 }

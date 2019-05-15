@@ -18,7 +18,7 @@
                        Text="Your profile"
                        TranslationY="5"/>
                 <!--Dropdown menu here-->
-                <Button WidthRequest="45" HorizontalOptions="End" TranslationX="-5" TranslationY="-30"/>
+                <Button x:Name="settingBtn" Clicked="SettingBtn_Clicked" WidthRequest="45" HorizontalOptions="End" TranslationX="-5" TranslationY="-30"/>
                 <StackLayout>
                     <Image Source="profileCircle.png" HeightRequest="150" />
                     <Label HorizontalTextAlignment="Center"

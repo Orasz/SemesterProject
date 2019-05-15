@@ -15,7 +15,7 @@
                         <Image Source="legohappypass.png" Aspect="AspectFit"/>
                     </StackLayout>
                     <StackLayout Padding="60" >
-                        <Button Text="Often Asked                                         >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
+                        <Button x:Name="FAQBtn" Clicked="FAQBtn_Clicked" Text="Often Asked                                         >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
                         <Button Text="Used Offers                                         >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
                         <Button Text="Your Tickets                                        >" BackgroundColor="{StaticResource MainBlue}" TextColor="{StaticResource PureWhite}" CornerRadius="50"/>
                     </StackLayout>

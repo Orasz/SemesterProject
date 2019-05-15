@@ -41,5 +41,10 @@ namespace HappyPass
 
 
         }
+
+        private async void SettingBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new SetttingsPage());
+        }
     }
 }

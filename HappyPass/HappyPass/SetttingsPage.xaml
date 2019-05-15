@@ -6,7 +6,7 @@
     
         <StackLayout>
             <StackLayout>
-                <Button WidthRequest="45" HorizontalOptions="End" Margin="0,5,10,0"/>
+                <Button x:Name="backBtn" Clicked="BackBtn_Clicked" WidthRequest="45" HorizontalOptions="End" Margin="0,5,10,0"/>
             </StackLayout>
             <StackLayout Margin="10,-10,0,0">
                 <Label Text="Settings" Style="{StaticResource ProfileInformationText}" />

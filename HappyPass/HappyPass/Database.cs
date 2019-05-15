@@ -23,11 +23,10 @@ namespace HappyPass
         {
             return _database.InsertAsync(user);
         }
-        public  bool CheckUserAsync(long userID)
+        public async Task<bool> CheckUserAsync(long userID)
         {
-            var isIn = from u in _database.Table<User>()
-                       where u.UserID == userID
-                       select u;
+            var isIn =  _database.Table<User>().Where(u => u.UserID == userID);
+            var result = await isIn.FirstOrDefaultAsync();         
             if (isIn != null)
                 return true;
             else return false;
